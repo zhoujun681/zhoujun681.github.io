@@ -1,0 +1,38 @@
+.selector {
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.hero{
+    width: 80px;
+    height: 80px;
+}
+
+.heros_text_style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* 设置元素的高度 */
+    font-size: xx-large;
+}
+
+
+
+.selector-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.selected-hero {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 80px; /* 你可以调整选人栏上图片的宽度 */
+    height: 80px; /* 你可以调整选人栏上图片的高度 */
+}

@@ -1,69 +1,39 @@
-<!doctype html>
-<html>
-		<head>
-<style>
-div {
-	width: 100px;
-	height: 100px;
-	background-color: red;
-	margin-top: 20px;
-	position: relative
-}
-</style>
-<meta charset="utf-8">
-<title>zj主页</title>
-<script>
+<!DOCTYPE html>
+<html lang="en">
 
-		  
-		
-	
-			window.onload = function()
-		{
-			var oDiv = document.getElementsByTagName('div');
-				 //  alert(oDiv.length);
-				for (var i = 0;i < oDiv.length; i++)
-					{   oDiv[i].timer = null;
-						oDiv[i].onmousemove = function()
-		             	{//  alert(this);
-						 
-		             		startMove(this , 300);
-		             	}
-		             	
-		             	oDiv[i].onmouseout = function()
-		             	{
-		             		startMove(this , 100);
-		             	}
-					}
-			
-			
-		}
-	
-		function startMove(obj, Target)
-	{
-		
-	    clearInterval(obj.timer);
-		obj.timer = setInterval(function(){
-			var ispeed = (Target - obj.offsetWidth)/8 ;
-			ispeed = ispeed>0?Math.ceil(ispeed):Math.floor(ispeed);
-		if(obj.offsetWidth == Target)
-			{
-				clearInterval(obj.timer);
-			}
-		else 
-			{
-				obj.style.width = obj.offsetWidth + ispeed + 'px';
-			}
-			
-		},30)
-		
-	}
-		</script>
-		</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            margin: 50px;
+            background-image: url("images/bg.jpg");
+        }
 
-		<body>
-      <p>zj的主页</p>
-             <div >1</div>
-			 <div >2</div>
-			 <div >3</div>
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            /* 设置元素的高度 */
+            font-size: xx-large;
+        }
+        h2{
+            font-size: larger;
+            color: rgb(223, 21, 81);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>BB的个人主页</h1>
+        <h2>小冰冰传奇工具</h2>
+        <li><a href="./htmls/xbbcq_tool/xbbcq_xr.html">竞技场选人</a></li>
+    </div>
+
 </body>
+
 </html>
