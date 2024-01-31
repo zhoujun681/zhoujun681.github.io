@@ -8,8 +8,7 @@
 <body>
     <h1>云南省昆明市石林县阿着底村
         “光影传奇·寻梦阿诗玛”活动长期价格公示</h1>
-</br>
-    <p>
+
         <textarea name="content" cols="100" rows="100" >
 尊敬的游客：
 您好！
@@ -39,17 +38,22 @@
                                                        石林思迪安农旅发展有限公司
                                                          2024年1月31日
                                     </textarea>
-    </p>
+
 </body>
 
 <style>
 body{
     background-color: rgb(200, 206, 214);
+    display: flex; /* 使用flex布局 */
+    flex-direction: column; /* 设置flex项目垂直排列 */
+    justify-content: center; /* 使子元素垂直居中 */
+    align-items: center; /* 使子元素水平居中 */
+    height: 100vh; /* 让body高度为视口高度 */
+    margin: 0; /* 移除默认的margin */
+    text-align: center; /* 文本居中，这会影响h1元素 */
 }
 
-textarea{
-    background-color: rgba(201, 212, 216, 0.668);
-}
+
 img{
     width: 50%;
     height: 50%;
@@ -58,13 +62,14 @@ img{
 h1{
    text-align: center
 }
-}
+
 
 textarea{
-    margin: 0 auto;
     font-size: 1.3rem;
-    display: flex;
-  align-items: center;
+    background-color: rgba(201, 212, 216, 0.668);
+    width: 80%; /* 宽度可以根据需要进行调整 */
+    margin-top: 20px; /* 如果需要在元素之间添加一些间隔 */
+   
 }
 
 </style>
